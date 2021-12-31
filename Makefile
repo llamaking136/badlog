@@ -23,3 +23,6 @@ $(TARGET): $(OBJ_FILES)
 
 clean:
 	rm -r output $(TARGET)
+
+example: $(TARGET)
+	$(CXX) -o example -Iinclude $(TARGET) example.cpp
